@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Куратор - вход</title>
+</head>
+<body class="page">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol class="csvg-inline--fa cfa-check cfa-w-16" viewbox="0 0 512 512" id="check" xmlns="http://www.w3.org/2000/svg">
+            <path d="M173.898 439.404l-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26. 207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-264.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+        </symbol>
+    </svg>
+    <div class="auth">
+        <div class="wrap">
+            <div class="auth__inner">
+                    <h1 class="auth__title title__big">Вход в систему “Купол”</h1>
+                    <p class="auth__desc">Введите логин и пароль полученый у руководителя</p>
+                    <form class="auth__form" action method="POST">
+                        <input class="auth__field field" type="text" name="login" autocomplete="off" placeholder="Логин" required>
+                        <input class="auth__field field" type="password" name="password" placeholder="Пароль" required>
+                        <label class="auth__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" name="savePassword">
+                            <div class="checkbox__custom">
+                                <svg class="icon icon-check checkbox__svg">
+                                    <use xlink:href="#check"/>
+                                </svg>
+                            </div>
+                            <p class="checkbox__text">Запомнить меня</p>
+                        </label>
+                    </form>
+                    <button onclick="window.location.href='profile.html'" class="auth__button button button--common">Вход</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
